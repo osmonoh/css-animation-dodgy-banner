@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 300px;
+  height: 233px;
+  border-radius: 10px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.top {
+  position: relative;
+  top: -100px;
+
+  padding: 10px;
+  color: midnightblue;
+  font-size: 2.4rem;
+  font-weight: bold;
+
+  animation: top-text 6s infinite forwards;
+}
+
+@keyframes top-text {
+  10% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  18% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.logo {
+  width: 20px;
+  opacity: 0;
+  animation: logo 6s infinite;
+}
+
+@keyframes logo {
+  28% {
+    transform: rotateZ(0);
+    opacity: 0;
+  }
+  31% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+  }
+  60% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+  }
+  70% {
+    transform: rotateZ(0);
+    opacity: 0;
+  }
+}
+
+.logo img {
+  width: 100%;
+}
+
+.top-text {
+  width: 80%;
+}
+
+.middle {
+  position: relative;
+  bottom: -130px;
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+
+  animation: middle 6s infinite forwards;
+}
+
+@keyframes middle {
+  18% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  24% {
+    transform: translateY(-130px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-130px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.middle-number {
+  color: orangered;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.middle-text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.bottom {
+  position: relative;
+  bottom: -53px;
+  background-color: teal;
+  padding: 10px;
+
+  animation: bottom 6s infinite forwards;
+}
+
+@keyframes bottom {
+  15% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-53px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-53px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.btn {
+  position: relative;
+  left: 100px;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: midnightblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  opacity: 0;
+
+  animation: btn 6s infinite;
+}
+
+@keyframes btn {
+  28% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  31% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
