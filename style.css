@@ -25,32 +25,30 @@ body {
 }
 
 .top {
-  position: relative;
-  top: -100px;
-
+  transform: translateY(-100px);
   padding: 10px;
   color: midnightblue;
   font-size: 2.4rem;
   font-weight: bold;
 
-  animation: top-text 6s infinite forwards;
+  animation: top-text 6s infinite;
 }
 
 @keyframes top-text {
   10% {
-    transform: translateY(0);
+    transform: translateY(-100px);
     opacity: 0;
   }
   18% {
-    transform: translateY(100px);
+    transform: translateY(0);
     opacity: 1;
   }
   60% {
-    transform: translateY(100px);
+    transform: translateY(0);
     opacity: 1;
   }
   70% {
-    transform: translateY(0);
+    transform: translateY(-100px);
     opacity: 0;
   }
 }
@@ -58,6 +56,7 @@ body {
 .logo {
   width: 20px;
   opacity: 0;
+
   animation: logo 6s infinite;
 }
 
@@ -89,32 +88,31 @@ body {
 }
 
 .middle {
-  position: relative;
-  bottom: -130px;
+  transform: translateY(130px);
   background-color: salmon;
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 10px;
 
-  animation: middle 6s infinite forwards;
+  animation: middle 6s infinite;
 }
 
 @keyframes middle {
   18% {
-    transform: translateY(0);
+    transform: translateY(130px);
     opacity: 0;
   }
   24% {
-    transform: translateY(-130px);
+    transform: translateY(0);
     opacity: 1;
   }
   60% {
-    transform: translateY(-130px);
+    transform: translateY(0);
     opacity: 1;
   }
   70% {
-    transform: translateY(0);
+    transform: translateY(130px);
     opacity: 0;
   }
 }
@@ -131,36 +129,34 @@ body {
 }
 
 .bottom {
-  position: relative;
-  bottom: -53px;
+  transform: translateY(53px);
   background-color: teal;
   padding: 10px;
 
-  animation: bottom 6s infinite forwards;
+  animation: bottom 6s infinite;
 }
 
 @keyframes bottom {
   15% {
-    transform: translateY(0);
+    transform: translateY(53px);
     opacity: 0;
   }
   20% {
-    transform: translateY(-53px);
+    transform: translateY(0);
     opacity: 1;
   }
   60% {
-    transform: translateY(-53px);
+    transform: translateY(0);
     opacity: 1;
   }
   70% {
-    transform: translateY(0);
+    transform: translateY(53px);
     opacity: 0;
   }
 }
 
 .btn {
-  position: relative;
-  left: 100px;
+  transform: translateX(100px);
   display: inline-block;
   border-radius: 20px;
   background-color: midnightblue;
@@ -174,19 +170,19 @@ body {
 
 @keyframes btn {
   28% {
-    transform: translateX(0);
+    transform: translateX(100px);
     opacity: 0;
   }
   31% {
-    transform: translateX(-100px);
+    transform: translateX(0);
     opacity: 1;
   }
   60% {
-    transform: translateX(-100px);
+    transform: translateX(0);
     opacity: 1;
   }
   70% {
-    transform: translateX(0);
+    transform: translateX(100px);
     opacity: 0;
   }
 }
